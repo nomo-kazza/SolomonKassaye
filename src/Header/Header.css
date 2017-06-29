@@ -1,0 +1,203 @@
+/*-->> header style <<--*/
+.App-header {
+  background-color: rgb(127, 255, 212);
+  padding: 3px 50px;
+  color: white;
+  position: relative;
+  z-index: 10;
+
+  /*background-color: rgb(255, 127, 151);
+  padding: 3px 50px;
+  color: white;
+  position: fixed;
+  z-index: 10;
+  width: 100%;*/
+}
+.sk-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+/*-->> nav style <<--*/
+.sk-header nav {
+  width: 60%;
+  position: absolute;
+  right: 0;
+  z-index: 2;
+  top: 46px;
+}
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0;
+}
+@media only screen and (max-width: 1023px) {
+  nav ul {
+    display: none;
+  }
+}
+  nav ul li {
+    list-style: none;
+    position: relative;
+    /*transform: rotate(20deg);*/
+    transition: all 0.5s ease-in-out;
+  }
+  
+  /*nav ul li:nth-child(2) {
+    transform: rotate(-20deg);
+  }
+  nav ul li:nth-child(4) {
+    transform: rotate(-20deg);
+  }*/
+  nav ul li:hover {
+    transform: rotate(0deg);
+  }
+    nav ul li a {
+      font-size: 18px;
+      color: #fff;
+      font-weight: 500;
+      text-decoration: none;
+      transition: all 500ms ease-in-out;
+      border-radius: 5px;
+      background-color: rgb(255, 127, 151);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 5px 10px;
+      position: relative;
+      z-index: 9;
+      line-height: 1.4;
+
+    }
+    nav ul li a:hover {
+      color: rgb(12, 25, 22);
+    }
+    nav ul li:not(:first-child):before {
+      content: '';
+      position: absolute;
+      width: 130%;
+      height: 2px;
+      right: 75%;
+      top: 16px;
+      z-index: 0;
+      background-color: rgb(255, 127, 151);
+      z-index: 0;
+      display: none;
+    }
+      nav ul li a span {
+        height: 40px;
+        width: 2px;
+        background-color: rgb(255, 127, 151);
+        position: absolute;
+        left: calc(50% - 2px);
+        top: -40px;
+      }
+      nav ul li a span:after {
+        content: '';
+        height: 45px;
+        width: 2px;
+        background-color: rgb(255, 127, 151);
+        position: absolute;
+        right: 8px;
+        top: 0;
+        transform: rotate(25deg);
+      }
+      nav ul li a span:before {
+        content: '';
+        height: 45px;
+        width: 2px;
+        background-color: rgb(255, 127, 151);
+        position: absolute;
+        left: 8px;
+        top: 0;
+        transform: rotate(-25deg);
+      }
+        
+/*-->> logo style <<--*/
+.sk-header .logo {
+  /*animation: App-logo-spin infinite 20s linear;*/
+  font-size: 24px;
+  font-weight: bold;
+  color: lightcoral;
+  position: absolute;
+  left: 40px;
+  top: 15px;
+}
+.logo img {
+  width: 115px;
+}
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+* {
+  margin: 0;
+  padding: 0; 
+}
+
+/* humburger menu */
+
+#nav-icon1 {
+  width: 30px;
+  height: 24px;
+  position: relative;
+  transform: rotate(0deg);
+  transition: .5s ease-in-out;
+  cursor: pointer;
+  position: absolute;
+  top: -20px;
+  right: 20px;
+  padding: 6px;
+  box-sizing: content-box;
+  background: rgb(255, 127, 151);
+  display: none;
+  border-radius: 3px;
+}
+@media only screen and (max-width: 1023px) {
+  #nav-icon1 {
+    display: block;
+  }
+}
+#nav-icon1 span {
+  display: block;
+  position: absolute;
+  height: 4px;
+  width: 30px;
+  background: #fff;
+  border-radius: 6px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg) translate(6px, 6px);
+  transition: .25s ease-in-out;
+}
+
+#nav-icon1 span:nth-child(1) {
+  top: 0px;
+}
+
+#nav-icon1 span:nth-child(2) {
+  top: 10px;
+}
+
+#nav-icon1 span:nth-child(3) {
+  top: 20px;
+}
+
+#nav-icon1.open span:nth-child(1) {
+  top: 12px;
+  transform: rotate(135deg) translate(-2px, -7px);
+}
+
+#nav-icon1.open span:nth-child(2) {
+  opacity: 0;
+  left: -30px;
+}
+
+#nav-icon1.open span:nth-child(3) {
+  top: 12px;
+  transform: rotate(-135deg) translate(-7px, 2px);
+}
+

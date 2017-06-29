@@ -1,6 +1,16 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import Home from './home/index'
+import {
+  Route,
+  Switch,
+} from 'react-router-dom';
+import Header from './Header';
+import Footer from './Footer';
+import Projects from './Projects';
+import Achievements from './Achievements';
+import AboutMe from './AboutMe';
+import ContactMe from './ContactMe';
+import FourOFour from './404Example'
+import Home from './Home'
 import './App.css';
 
 class App extends Component {
@@ -8,13 +18,21 @@ class App extends Component {
     return (
       <div className="App">
         <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
+          <Header />
         </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-        <Home />
+        <div className="App-content">
+          <Switch>
+            <Route exact path="/" component={Home}/>
+            <Route path="/projects" component={Projects} />
+            <Route path="/achievements" component={Achievements} />
+            <Route path="/about-me" component={AboutMe} />
+            <Route path="/contact-me" component={ContactMe} />
+            <Route component={FourOFour}/>
+          </Switch>
+        </div>
+        <div className="App-footer">
+          <Footer />
+        </div>
       </div>
     );
   }

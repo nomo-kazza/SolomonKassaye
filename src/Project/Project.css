@@ -1,0 +1,19 @@
+.sk-project img {
+  height: 200px;
+}
+.sk-project .project-name {
+  display: block;
+  font-size: 14px;
+  color: #62e;
+}
+.project-technologies {
+  font-size: 12px;
+}
+  .project-technologies ul {
+    display: flex;
+    margin: 0;
+  }
+    .project-technologies ul a {
+      font-size: 12px;
+      color: orange;
+    }

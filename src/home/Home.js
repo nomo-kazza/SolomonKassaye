@@ -1,18 +1,42 @@
 import React, { Component } from 'react';
-import logo from '../logo.svg';
-import './home.css';
+import ProjectsSlider from '../ProjectsSlider';
+import Achievements from '../Achievements';
+import './Home.css';
 
 class Home extends Component {
   render() {
     return (
-      <div className="Home">
-        <div className="Home-header">
-          <img src={logo} className="Home-logo" alt="logo" />
-          <h2>Welcome to React</h2>
+      <div className="sk-wrapper">
+        <div className="sk-main-content">
+          <div className="bg-cover"></div>
+          <div className="intro-bg"></div>
+          <div className="sk-section sk-intro-container">
+            <h3>Hi, I am Solomon Kassaye</h3>
+            <h4>Welcome to my portfolio.</h4>
+            <h5>I am passionate about Software development.</h5>
+            <h5>I am in Software development since 2009 after 
+              I have graduated in Electrical Engineering from Haramaya University, 
+              Ethiopia, in 2008.</h5>
+            <h5>I invite you to explore my site to get
+              a better understanding of my specialties, technique and professional experience.
+              What you’ll find below is the projects I was working at
+              <a href="https://www.topcoder.com/members/nomo_kazza/" className="link"> www.topcoder.com</a></h5>
+            <h5>Enjoy browsing, and get in touch with any questions.</h5>
+            <a href="mailto:nomo5503@gmail.com?Subject=Hello%20Solomon" className="sk-btn contact-me-btn">Contact Me</a>
+          </div>
+          <div className="sk-section sk-carousel-container">
+            <ProjectsSlider></ProjectsSlider>
+            <div className="projects-right">
+              <h4>Previous Projects</h4>
+              <h5>I used different technologies, from simple page styling and javascript interaction to google map API and d3 chart interactions</h5>
+              <a href="/projects" className="sk-btn more-btn">See More</a>
+            </div>
+          </div>
+
+          <div className="sk-section sk-achievements-container">
+            <Achievements></Achievements>
+          </div>
         </div>
-        <p className="Home-intro">
-          To get started, edit <code>src/Home.js</code> and save to reload.
-        </p>
       </div>
     );
   }

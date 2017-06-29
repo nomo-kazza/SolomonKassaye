@@ -1,0 +1,50 @@
+.sk-footer footer {
+    background: #000;
+    padding: 40px;
+    color: #fff;
+    display: flex;
+}
+.copyright {
+    font-size: 15px;
+    font-weight: 300;
+    flex: 1;
+}
+.social-icons {
+    display: flex;
+}
+    .social-icons a {
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        margin-left: 10px;
+    }
+    .social-icon {
+        display: flex;
+        width: 30px;
+        height: 30px;
+    }
+    .github-icon {
+        background-image: url('https://dl.dropboxusercontent.com/s/desu1sg91yp8qc0/github.svg');
+    }
+    .facebook-icon {
+        background-image: url('https://dl.dropboxusercontent.com/s/6ima9t3ciy52xef/facebook.svg');
+    }
+    .instagram-icon {
+        background-image: url('https://dl.dropboxusercontent.com/s/zgyiq5d6fzr77z8/instagram.svg');
+    }
+    .linkedin-icon {
+        background-image: url('https://dl.dropboxusercontent.com/s/vmu5pkjcj1aaghp/linkedin.svg');
+    }
+    .skype-icon {
+        background-image: url('https://dl.dropboxusercontent.com/s/pyz6o156tjg2ygq/skype.svg');
+    }
+    .twitter-icon {
+        background-image: url('https://dl.dropboxusercontent.com/s/hiru5zca4emynrx/twitter.svg');
+    }
+    .youtube-icon {
+        background-image: url('https://dl.dropboxusercontent.com/s/ob24fx5twixec59/youtube.svg');
+    }
+    .gmail-icon {
+        background-image: url('https://dl.dropboxusercontent.com/s/e21yvho4qmu7kzf/gmail.svg');
+    }

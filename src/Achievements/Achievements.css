@@ -1,0 +1,75 @@
+/*-->> Achievements style <<--*/
+.sk-achievements {
+    margin: 10px 0;
+}
+.sk-achievements-list ul {
+    display: grid;
+    grid-template-columns: [first] 10% [line2] 20% [line3] auto [col4-start] 20% [five] 10% [end];
+}
+    .sk-achievements-list ul li {
+        align-self: center;
+    }
+        .sk-achievements-list li img {
+            width: 100%;
+        }
+.sk-main-content .sk-achievements-container {
+  background-color: #FFC107;
+  padding: 60px 40px;
+  position: relative;
+}
+  .sk-achievements-container h4 {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 300;
+    text-align: center;
+    position: relative;
+    top: -25px;
+  }
+
+.floated-achievement {
+  position: absolute;
+  display: inline-block;
+  width: 120px;
+  color: #fff;
+  font-size: 12px;
+  padding: 5px;
+  border-radius: 12px;
+  background: #40f;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.6);
+}
+
+  .full-stack {
+    top: 30px;
+    right: 50px;
+    background: #dc4bd8;
+    transform: rotate(-12deg);
+  }
+  .android {
+    top: 82%;
+    right: 80px;
+    width: 102px;
+    background: #4bdc56;
+    transform: rotate(12deg);
+  }
+  .ruby {
+    top: 85%;
+    left: 80px;
+    width: 86px;
+    background: #a00c0c;
+    transform: rotate(5deg);
+  }
+  .topcoder-open {
+    width: 102px;
+    top: 20px;
+    left: 90px;
+    background: #2fd0d0;
+    transform: rotate(-18deg);
+  }
+  .mongodb {
+    width: 120px;
+    top: calc(100% - 10px);
+    left: calc(50% - 60px);
+    background: #61d;
+    transform: rotate(-15deg);
+  }
