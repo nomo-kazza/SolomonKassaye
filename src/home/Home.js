@@ -13,16 +13,11 @@ class Home extends Component {
           <div className="sk-section sk-intro-container">
             <h3>Hi, I am Solomon Kassaye</h3>
             <h4>Welcome to my portfolio.</h4>
-            <h5>I am passionate about Software development.</h5>
-            <h5>I am in Software development since 2009 after 
-              I have graduated in Electrical Engineering from Haramaya University, 
-              Ethiopia, in 2008.</h5>
             <h5>I invite you to explore my site to get
               a better understanding of my specialties, technique and professional experience.
-              What you’ll find below is the projects I was working at
-              <a href="https://www.topcoder.com/members/nomo_kazza/" className="link"> www.topcoder.com</a></h5>
+              What you’ll find below is the projects I was working at <a href="https://www.topcoder.com/members/nomo_kazza/" className="link"> www.topcoder.com</a></h5>
             <h5>Enjoy browsing, and get in touch with any questions.</h5>
-            <a href="mailto:nomo5503@gmail.com?Subject=Hello%20Solomon" className="sk-btn contact-me-btn">Contact Me</a>
+            <a href="mailto:solomonjobsearch@gmail.com?Subject=Hello%20Solomon" className="sk-btn contact-me-btn">Contact Me</a>
           </div>
           <div className="sk-section sk-carousel-container">
             <ProjectsSlider></ProjectsSlider>
@@ -33,7 +28,7 @@ class Home extends Component {
             </div>
           </div>
 
-          <div className="sk-section sk-achievements-container">
+          <div className="sk-section sk-achievements-container" id="achievements">
             <Achievements></Achievements>
           </div>
         </div>

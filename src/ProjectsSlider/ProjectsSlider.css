@@ -36,7 +36,7 @@
   transition: all .4s ease-in-out;
   width: 15px;
   height: 15px;
-  /*line-height: 15px;*/
+  opacity: 0.9;
 }
 .slick-prev:before, .slick-next:before {
   font-size: 30px;

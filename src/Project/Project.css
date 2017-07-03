@@ -1,19 +1,126 @@
-.sk-project img {
-  height: 200px;
+.sk-project {
+  position: relative;
+  background-color: aliceblue;
+  margin-bottom: 20px;
+
 }
-.sk-project .project-name {
-  display: block;
-  font-size: 14px;
-  color: #62e;
-}
-.project-technologies {
-  font-size: 12px;
-}
-  .project-technologies ul {
-    display: flex;
-    margin: 0;
+  .sk-project-card {
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    position: relative;
   }
-    .project-technologies ul a {
-      font-size: 12px;
-      color: orange;
+    .project-thumbnail {
+      position: relative;
+    }
+      .project-thumbnail:hover .hover-bg {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 2;
+        transition: all 0.3s ease-in-out;
+      }
+      .project-thumbnail:hover .hover-bg:before {
+        content: '';
+        position: absolute;
+        display: block;
+        z-index: 4;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        border-left: 50px solid #fff;
+        border-top: 25px solid transparent;
+        border-bottom: 25px solid transparent;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+      }
+
+    .sk-project .project-info {
+      padding: 10px;
+    }
+      .sk-project .project-name {
+        display: block;
+        font-size: 18px;
+        color: #00bcd4;
+        margin: 5px 0 16px;
+        text-decoration: underline;
+      }
+      .sk-project .project-name:hover {
+        text-decoration: none;
+      }
+      .project-technologies {
+        position: relative;
+      }
+      
+        .project-technologies p {
+          font-size: 15px;
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+
+        .project-technologies ul {
+          display: flex;
+          align-items: center;
+          margin: 10px 0 10px;
+          flex-wrap: wrap;
+        }
+          .project-technologies ul li:first-child {
+            padding-left: 105px;
+          }
+          .project-tags ul li:first-child {
+            padding-left: 40px;
+          }
+          .project-technologies ul a {
+            font-size: 8px;
+            color: #fff;
+            display: flex;
+            background-color: orange;
+            padding: 5px 7px;
+            border-radius: 10px;
+            margin-right: 10px;
+            margin-bottom: 5px;
+            border-top-left-radius: 0;
+            border-bottom-right-radius: 0;
+            text-transform: uppercase;
+            transition: all 0.2s ease-in-out;
+          }
+          .project-tags ul a {
+            color: #fff;
+            background-color: #19ad7b;
+            border-radius: 5px 0 5px 0;
+            padding: 5px;
+            font-size: 8px;
+          }
+          .project-technologies ul a:hover {
+            color: orange;
+            background-color: #fff;
+          }
+          .project-tags ul a:hover {
+            color: #19ad7b;
+            background-color: #fff;
+          }
+  .video-container {
+    width: 100%;
+    margin-top: 50px;
+    position: relative;
+  }
+  .hidden {
+    display: none;
+  }
+    .video-container video {
+      width: 70%;
+      margin-right: 30%;
+    }
+    .video-container .bg-cover {
+      width: 70%;
+      height: 100%;
+      background-color: rgba(110, 110, 110, 0.5);
+      mix-blend-mode: multiply;
+    }
+
+    .project-thumbnail img {
+      width: 100%;
     }

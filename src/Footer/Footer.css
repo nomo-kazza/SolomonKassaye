@@ -1,50 +1,76 @@
 .sk-footer footer {
-    background: #000;
-    padding: 40px;
-    color: #fff;
-    display: flex;
+	background: #434;
+	padding: 40px;
+	color: #fff;
+	display: flex;
 }
-.copyright {
-    font-size: 15px;
-    font-weight: 300;
-    flex: 1;
-}
+	.copyright {
+		font-size: 15px;
+		font-weight: 300;
+		flex: 1;
+		align-self: center;
+
+	}
+    .copyright p {
+      margin-top: 10px;
+    }
+		.contact-info {
+      display: flex;
+      flex-direction: column;
+    }
+      .contact-info a {
+        display: flex;
+        color: #00bcd4;
+        margin-bottom: 10px;
+        position: relative;
+        padding-left: 70px;
+      }
+      .contact-info a span:hover:last-child {
+        color: #009cd4;
+      }
+        .contact-info a span.f-label {
+          margin-right: 20px;
+          color: #fff;
+          position: absolute;
+          left: 0;
+        }
 .social-icons {
-    display: flex;
+	display: flex;
 }
-    .social-icons a {
-        width: 30px;
-        height: 30px;
-        display: flex;
-        align-items: center;
-        margin-left: 10px;
-    }
-    .social-icon {
-        display: flex;
-        width: 30px;
-        height: 30px;
-    }
-    .github-icon {
-        background-image: url('https://dl.dropboxusercontent.com/s/desu1sg91yp8qc0/github.svg');
-    }
-    .facebook-icon {
-        background-image: url('https://dl.dropboxusercontent.com/s/6ima9t3ciy52xef/facebook.svg');
-    }
-    .instagram-icon {
-        background-image: url('https://dl.dropboxusercontent.com/s/zgyiq5d6fzr77z8/instagram.svg');
-    }
-    .linkedin-icon {
-        background-image: url('https://dl.dropboxusercontent.com/s/vmu5pkjcj1aaghp/linkedin.svg');
-    }
-    .skype-icon {
-        background-image: url('https://dl.dropboxusercontent.com/s/pyz6o156tjg2ygq/skype.svg');
-    }
-    .twitter-icon {
-        background-image: url('https://dl.dropboxusercontent.com/s/hiru5zca4emynrx/twitter.svg');
-    }
-    .youtube-icon {
-        background-image: url('https://dl.dropboxusercontent.com/s/ob24fx5twixec59/youtube.svg');
-    }
-    .gmail-icon {
-        background-image: url('https://dl.dropboxusercontent.com/s/e21yvho4qmu7kzf/gmail.svg');
-    }
+	.social-icons a {
+		display: flex;
+		align-items: center;
+		margin-left: 10px;
+	}
+	.social-icon {
+		display: flex;
+	}
+	.facebook-icon {
+		position: relative;
+		top: -4px;
+		left: -2px;
+	}
+	.social-icon svg g {
+		transform: scale(1.5);
+	}
+	.facebook-icon svg g {
+		transform: scale(0.56);
+	}
+	.skype-icon:hover svg {
+		fill: #00aff0;
+	}
+	.github-icon:hover svg {
+		fill: #fff;;
+	}
+	.gmail-icon:hover svg {
+		fill: #d74a38;
+	}
+	.twitter-icon:hover svg {
+		fill: #4ab3f4;;
+	}
+	.linkedin-icon:hover svg {
+		fill: #0077b5;
+	}
+	.facebook-icon:hover svg {
+		fill: #3b5998;
+	}

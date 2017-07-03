@@ -1,3 +1,87 @@
-/*-->> Projects style <<--*/
-.sk-projects {
+/*-->> about me style <<--*/
+.sk-about-me {
+  position: relative;
+  min-height: 100vh;
 }
+  .sk-about-me .bg-cover {
+    background-color: rgba(167, 255, 25, 0.75);
+  }
+  .sk-about-me .intro-bg {
+    background: url('../images/tco20161.jpg') no-repeat center center fixed;
+    filter: brightness(0.3);
+  }
+  .sk-about-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 120px 0px 20px 100px;
+    color: #fff;
+    position: relative;
+    font-weight: 300;
+    z-index: 9;
+  }
+    .sk-about-content .sk-intro-container {
+      flex: 3;
+      padding-right: 20px;
+    }
+    .sk-about-content .sk-intro-container h5 {
+      line-height: 1.2;
+    }
+    .sk-about-content .sk-intro-container h3 {
+      font-size: 40px;
+    }
+    .sk-about-content .sk-intro-container h4 {
+      font-size: 30px;
+    }
+    .sk-about-content .sk-intro-container h5 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+    .sk-about-content .sk-skills {
+      flex: 1;
+      padding: 40px 50px 10px 20px;
+    }
+      .sk-skills h4 {
+        text-align: center;
+        font-size: 20px;
+        padding-bottom: 20px;
+      }
+        .sk-skills ul li {
+          padding: 10px;
+          transform: skew(-10deg);
+        }
+        .sk-skills ul li.html5 {
+          background-color: #f1672c;
+        }
+        .sk-skills ul li.css3 {
+          background-color: #30a9dc;
+        }
+        .sk-skills ul li.bootstrap {
+          background-color: #5c4383;
+        }
+        .sk-skills ul li.sass {
+          background-color: #cf649a;
+        }
+        .sk-skills ul li.js {
+          background-color: #f1bf26;
+        }
+        .sk-skills ul li.jquery {
+          background-color: #0769ad;
+        }
+        .sk-skills ul li.angular1 {
+          background-color: #dd1b16;
+        }
+        .sk-skills ul li.angular4 {
+          background-color: #c3002f;
+        }
+        .sk-skills ul li.react {
+          background-color: #00d8ff;
+        }
+        .sk-skills ul li.node {
+          background-color: #43853d
+        }
+        .sk-skills ul li.d3 {
+          background-color: #f67600;
+        }
+        .sk-skills ul li.require {
+          background-color: #42a4ec;
+        }
