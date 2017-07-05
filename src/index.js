@@ -7,7 +7,6 @@ import App from './App';
 
 
 import registerServiceWorker from './registerServiceWorker';
-import './fonts/fonts.css'
 import './index.css';
 
 ReactDOM.render(
