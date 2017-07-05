@@ -16,9 +16,9 @@ class Header extends Component {
   render() {
     return (
       <div className="sk-header">
-        <div className="logo"><a href="/"><img src="https://dl.dropboxusercontent.com/s/p5kxedztr9iwgkt/my-logo4.png" alt="logo"/></a></div>
+        <div className="logo"><img src="https://dl.dropboxusercontent.com/s/8mocuvvzimcyzkp/my-logo.png" alt="logo"/></div>
         <nav>
-            <ul className={this.state.isOpen ? 'mobile open' : ''} onClick={this.toggleHamburger}>
+            <ul>
                 <li><Link to="/"><span></span>Home</Link></li>
                 <li><Link to="/projects"><span></span>Projects</Link></li>
                 <li><Link to="/achievements"><span></span>Achievements</Link></li>
