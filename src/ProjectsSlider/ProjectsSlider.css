@@ -63,8 +63,3 @@
 .slick-dots li.slick-active button:before {
   color: #717c83;
 }
-@media only screen and (max-width: 1024px) and (min-width: 768px) {
-  .slick-slide img {
-    height: 305px;
-  }
-}
