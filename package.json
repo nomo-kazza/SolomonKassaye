@@ -2,7 +2,7 @@
   "name": "solomonkassaye",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://nomo-kazza.github.io/",
+  "homepage": "http://nomo-kazza.github.io/SolomonKassaye",
   "dependencies": {
     "react": "^15.5.4",
     "react-dom": "^15.5.4",

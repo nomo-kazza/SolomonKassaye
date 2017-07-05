@@ -23,13 +23,13 @@ class App extends Component {
         </div>
         <div className="App-content">
           <Switch>
-            <Route exact path="/" component={Home}/>
+            <Route exact path="/SolomonKassaye" component={Home}/>
             <Route path="/projects" component={Projects} />
             <Route path="/achievements" component={Achievements} />
             <Route path="/about-me" component={AboutMe} />
             <Route path="/contact-me" component={ContactMe} />
-            {/*<Redirect from='/solomonkassaye' to='/SolomonKassaye'/>
-            <Redirect from='/' to='/SolomonKassaye'/>*/}
+            <Redirect from='/solomonkassaye' to='/SolomonKassaye'/>
+            <Redirect from='/' to='/SolomonKassaye'/>
             <Route component={FourOFour}/>
           </Switch>
         </div>
