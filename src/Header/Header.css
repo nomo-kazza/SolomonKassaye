@@ -1,6 +1,12 @@
 /*-->> header style <<--*/
 .App-header {
-  background-color: rgba(20, 90, 250, 1);
+  /*background-color: rgb(127, 255, 212);
+  padding: 3px 50px;
+  color: white;
+  position: relative;
+  z-index: 10;*/
+
+  background-color: rgb(255, 127, 151);
   padding: 3px 50px;
   color: white;
   position: fixed;
@@ -15,118 +21,87 @@
 }
 /*-->> nav style <<--*/
 .sk-header nav {
-  width: 70%;
+  width: 60%;
   position: absolute;
-  right: 4px;
+  right: 20px;
   z-index: 2;
-  top: 6px;
+  top: 4px;
 }
 nav ul {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-around;
   align-items: center;
   margin: 0;
 }
 @media only screen and (max-width: 1023px) {
-  .sk-header nav {
-    width: 50%;
-  }
   nav ul {
-    right: -100%;
-    transition: all 0.3s ease-in-out;
-    flex-direction: column;
-    position: relative;
-    padding-top: 50px;
-  }
-  nav ul:before {
-    content: '';
-    transition: all 0.2s ease-in-out;
-  }
-  nav ul.mobile.open {
-    display: flex;
-    right: 0;
-  }
-  nav ul.mobile.open:before {
-    content: '';
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.8);
+    display: none;
   }
 }
   nav ul li {
     list-style: none;
     position: relative;
+    transform: rotate(20deg);
     transition: all 0.3s ease-in-out;
-    padding-top: 4px;
-    margin-left: 4px;
+    padding-top: 40px;
   }
-
+  
+  nav ul li:nth-child(2) {
+    transform: rotate(-20deg);
+  }
+  nav ul li:nth-child(4) {
+    transform: rotate(-20deg);
+  }
+  nav ul li.active,
+  nav ul li:hover {
+    transform: rotate(0deg);
+    /*animation: moveIt 2.5s ease-in-out infinite;*/
+  }
     nav ul li a {
-      text-transform: uppercase;
-      font-size: 15px;
+      font-size: 18px;
       color: #fff;
       font-weight: 500;
       text-decoration: none;
       transition: all 300ms ease-in-out;
-      background-color: rgba(20, 90, 250, 1);
+      border-radius: 5px;
+      background-color: rgb(255, 127, 151);
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: 6px 10px 4px;
+      padding: 5px 10px;
       position: relative;
       z-index: 9;
       line-height: 1.4;
 
     }
-    @media only screen and (max-width: 1023px) {
-      nav ul li {
-        width: 100%;
-        right: -100%;
-      }
-      nav ul li:first-child {
-        transition: all 0.2s ease-in-out;
-      }
-      nav ul li:nth-child(2) {
-        transition: all 0.4s ease-in-out;
-      }
-      nav ul li:nth-child(3) {
-        transition: all 0.6s ease-in-out;
-      }
-      nav ul li:nth-child(4) {
-        transition: all 0.8s ease-in-out;
-      }
-      nav ul li:nth-child(5) {
-        transition: all 0.9s ease-in-out;
-      }
-      nav ul.mobile.open li {
-        right: 0;
-      }
-        nav ul li a {
-          justify-content: flex-start;
-        }
-    }
     nav ul li a:hover {
       color: rgb(12, 25, 22);
     }
-
+    nav ul li:not(:first-child):before {
+      content: '';
+      position: absolute;
+      width: 130%;
+      height: 2px;
+      right: 75%;
+      top: 16px;
+      z-index: 0;
+      background-color: rgb(255, 127, 151);
+      z-index: 0;
+      display: none;
+    }
       nav ul li a span {
         height: 40px;
         width: 2px;
-        background-color: rgba(20, 90, 250, 1);
+        background-color: rgb(255, 127, 151);
         position: absolute;
         left: calc(50% - 2px);
         top: -40px;
-        display: none;
       }
       nav ul li a span:after {
         content: '';
         height: 45px;
         width: 2px;
-        background-color: rgba(20, 90, 250, 1);
+        background-color: rgb(255, 127, 151);
         position: absolute;
         right: 8px;
         top: 0;
@@ -136,31 +111,43 @@ nav ul {
         content: '';
         height: 45px;
         width: 2px;
-        background-color: rgba(20, 90, 250, 1);
+        background-color: rgb(255, 127, 151);
         position: absolute;
         left: 8px;
         top: 0;
         transform: rotate(-25deg);
       }
+        
 /*-->> logo style <<--*/
 .sk-header .logo {
+  /*animation: App-logo-spin infinite 20s linear;*/
   font-size: 24px;
   font-weight: bold;
   color: lightcoral;
   position: absolute;
-  left: 5px;
-  top: 10px;
+  left: 40px;
+  top: 15px;
 }
 .logo img {
   width: 115px;
-  background: #fff;
 }
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
-
-
+@keyframes nav-li-spin {
+  /*0% { transform: rotate(20deg); }
+  50% { transform: rotate(0deg); }
+  100% { transform: rotate(-20deg); }*/
+}
+@keyframes moveIt {
+  0%, 100% {
+    transform: rotate(20deg);
+  }
+  50% {
+    transform: rotate(-20deg);
+  }
+}
 
 /* humburger menu */
 
@@ -172,14 +159,13 @@ nav ul {
   transition: .5s ease-in-out;
   cursor: pointer;
   position: absolute;
-  top: 4px;
-  right: 00px;
+  top: 20px;
+  right: 20px;
   padding: 6px;
   box-sizing: content-box;
-  background: rgba(20, 90, 250, 1);
+  background: rgb(255, 127, 151);
   display: none;
   border-radius: 3px;
-  z-index: 10;
 }
 @media only screen and (max-width: 1023px) {
   #nav-icon1 {
@@ -225,8 +211,4 @@ nav ul {
   top: 12px;
   transform: rotate(-135deg) translate(-7px, 2px);
 }
-	@media only screen and (max-width: 767px) and (min-width: 320px) {
-    .sk-header nav {
-      width: 70%;
-    }
-  }
+
