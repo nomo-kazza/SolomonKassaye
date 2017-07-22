@@ -125,6 +125,27 @@
         .sk-skills ul li.require {
           background-color: #42a4ec;
         }
+        .sk-skills ul li.java {
+          background-color: #ff0000;
+        }
+        .sk-skills ul li.mongodb {
+          background-color: #7fc857;
+        }
+        .sk-skills ul li.ionic {
+          background-color: #298fff;
+        }
+        .sk-skills ul li.ruby {
+          background-color: #cc0000;
+        }
+        .sk-skills ul li.gmap {
+          background-color: #f8d335;
+        }
+        .sk-skills ul li.android {
+          background-color: #77c159;
+        }
+        .sk-skills ul li.sharepoint {
+          background-color: #1570A6;
+        }
 
 @media only screen and (max-width: 1024px) and (min-width: 768px) {
   .sk-about-content {

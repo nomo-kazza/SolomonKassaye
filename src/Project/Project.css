@@ -5,13 +5,23 @@
   display: inline-block;
 }
   .sk-project-card {
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
     position: relative;
+    border: 1px solid rgba(0,0,0,0.1);
   }
     .project-thumbnail {
       position: relative;
+      display: inline-block;
+      overflow: hidden;
     }
-      .project-thumbnail:hover .hover-bg {
+      .project-thumbnail img {
+        transition: all 0.3s ease-in-out;
+        vertical-align: middle;
+        transform: scale(1);
+      }
+      .project-thumbnail:hover img {
+        transform: scale(1.05);
+      }
+      .project-thumbnail .hover-bg {
         display: block;
         position: absolute;
         width: 100%;
@@ -21,6 +31,12 @@
         background: rgba(0, 0, 0, 0.5);
         z-index: 2;
         transition: all 0.3s ease-in-out;
+        visibility: hidden;
+        opacity: 0;
+      }
+      .project-thumbnail:hover .hover-bg {
+        visibility: visible;
+        opacity: 1;
       }
       .project-thumbnail .play-icon {
         position: absolute;

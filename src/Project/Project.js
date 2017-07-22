@@ -24,6 +24,7 @@ class Project extends Component {
     const vSrc = this.props.videoSrc;
     const iSrc = this.props.thumbSrc;
     const proName = this.props.projectName;
+    const proUrl = this.props.projectUrl;
     const tags = this.props.projectTags;
     const techs = this.props.projectTechs;
 
@@ -42,7 +43,7 @@ class Project extends Component {
             <span className="play-icon"></span>
           </div>
           <div className="project-info">
-            <a href="void(0)" className="project-name">{proName}</a>
+            <a href={proUrl} className="project-name">{proName}</a>
             <div className="project-technologies">
               <p>Technologies :</p>
               <ul>

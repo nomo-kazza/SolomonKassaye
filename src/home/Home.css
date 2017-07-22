@@ -121,6 +121,14 @@
   width: 150px;
   font-weight: 300;
 }
+@media only screen and (min-width: 1025px) {
+  .sk-achievements-container:before {
+    content: '';
+  }
+  .sk-achievements-container:after {
+    content: '';
+  }
+}
 @media only screen and (max-width: 1024px) and (min-width: 768px) {
     .sk-main-content .sk-intro-container {
       padding: 160px 40px 20px 70px;

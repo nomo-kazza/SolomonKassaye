@@ -40,8 +40,17 @@ class AboutMe extends Component {
               <li className="angular4">ANGULAR 4</li>
               <li className="react">REACT JS</li>
               <li className="node">Node JS</li>
-              <li className="d3">D3 JS</li>
               <li className="require">REQUIRE JS</li>
+              <li className="d3">D3 JS</li>
+              <li className="java">JAVA</li>
+              <li className="mongodb">Mongodb</li>
+              <li className="ionic">Ionic</li>
+              <li className="ruby">Ruby On Rails</li>
+              <li className="gmap">Google Map API</li>
+              <li className="android">Android</li>
+              <li className="sharepoint">Sharepoint</li>
+              <li className="sharepoint">Sublime Text</li>
+              <li className="sharepoint">Visual Studio Code</li>
             </ul>
           </div>
         </div>
